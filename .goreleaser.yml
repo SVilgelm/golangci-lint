@@ -70,7 +70,7 @@ changelog:
 
 brews:
   - tap:
-      owner: golangci
+      owner: svilgelm
       name: homebrew-tap
     folder: Formula
     homepage: https://golangci.com
