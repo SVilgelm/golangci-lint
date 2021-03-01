@@ -3,7 +3,7 @@ project_name: golangci-lint
 
 release:
   github:
-    owner: golangci
+    owner: svilgelm
     name: golangci-lint
 
 builds:
@@ -45,7 +45,7 @@ archives:
     format_overrides:
       - goos: windows
         format: zip
-    name_template: '{{ .ProjectName }}-{{ .Version }}-{{ .Os }}-{{ .Arch }}{{ if .Arm }}v{{ .Arm }}{{ end }}'
+    name_template: "{{ .ProjectName }}-{{ .Version }}-{{ .Os }}-{{ .Arch }}{{ if .Arm }}v{{ .Arm }}{{ end }}"
     files:
       - LICENSE
       - README.md
@@ -54,19 +54,19 @@ snapshot:
   name_template: SNAPSHOT-{{ .Commit }}
 
 checksum:
-  name_template: '{{ .ProjectName }}-{{ .Version }}-checksums.txt'
+  name_template: "{{ .ProjectName }}-{{ .Version }}-checksums.txt"
 
 changelog:
   sort: asc
   filters:
     exclude:
-    - '^docs:'
-    - '^test:'
-    - '^dev:'
-    - 'README'
-    - 'build\(deps\): bump .* in /docs \(#\d+\)'
-    - Merge pull request
-    - Merge branch
+      - "^docs:"
+      - "^test:"
+      - "^dev:"
+      - "README"
+      - 'build\(deps\): bump .* in /docs \(#\d+\)'
+      - Merge pull request
+      - Merge branch
 
 brews:
   - tap:
@@ -88,8 +88,7 @@ brews:
       system "#{bin}/golangci-lint --version"
 
 nfpms:
-  -
-    id: golangci-lint-nfpms
+  - id: golangci-lint-nfpms
     package_name: golangci-lint
     file_name_template: "{{ .ProjectName }}-{{ .Version }}-{{ .Os }}-{{ .Arch }}{{ if .Arm }}v{{ .Arm }}{{ end }}"
     homepage: https://golangci-lint.run/
