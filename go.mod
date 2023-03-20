@@ -4,7 +4,7 @@ go 1.14
 
 require (
 	4d63.com/gochecknoglobals v0.0.0-20201008074935-acfc0b28355a
-	github.com/BurntSushi/toml v0.3.1
+	github.com/BurntSushi/toml v1.2.1
 	github.com/Djarvur/go-err113 v0.0.0-20210108212216-aea10b59be24
 	github.com/OpenPeeDeeP/depguard v1.0.1
 	github.com/alexkohler/prealloc v1.0.0
@@ -78,9 +78,9 @@ require (
 	github.com/ultraware/whitespace v0.0.4
 	github.com/uudashr/gocognit v1.0.1
 	github.com/valyala/quicktemplate v1.6.3
-	golang.org/x/tools v0.1.0
+	golang.org/x/tools v0.4.1-0.20221208213631-3f74d914ae6d
 	gopkg.in/yaml.v2 v2.4.0
-	honnef.co/go/tools v0.1.2
+	honnef.co/go/tools v0.4.3
 	mvdan.cc/gofumpt v0.1.0
 	mvdan.cc/interfacer v0.0.0-20180901003855-c20040233aed
 	mvdan.cc/lint v0.0.0-20170908181259-adc824a0674b // indirect
